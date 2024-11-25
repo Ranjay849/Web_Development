@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables and Forms</title>
+  </head>
+  <body>
+    <h2>The Table in HTML</h2>
+    <table border="1px">
+      <tr>
+        <th>Programming Language</th>
+        <th>Developer</th>
+        <th>Release Year</th>
+      </tr>
+
+      <tr>
+        <td>Python</td>
+        <td>Guido van Rossum</td>
+        <td>1991</td>
+      </tr>
+
+      <tr>
+        <td>JavaScript</td>
+        <td>Brendan Eich</td>
+        <td>1995</td>
+      </tr>
+
+      <tr>
+        <td>Java</td>
+        <td>James Gosling</td>
+        <td>1995</td>
+      </tr>
+
+      <tr>
+        <td>C++</td>
+        <td>Bjarne Stroustrup</td>
+        <td>1983</td>
+      </tr>
+    </table>
+
+    <h2>The Form in HTML</h2>
+    <form>
+      <label for="name">
+        Name:<input type="text" placeholder="Enter Your Name" />
+      </label>
+
+      <label for="father's name">
+        Father's Name:<input
+          type="text"
+          placeholder="Enter Your Fathers_Name"
+        />
+      </label>
+
+      <label for="course">
+        Course:<input type="text" placeholder="Enter Your Course" />
+      </label>
+
+      <label for="branch">
+        Branch:<input type="text" placeholder="Enter Your Branch" />
+      </label>
+
+      <label for="phone">
+        Phone:<input type="tel" placeholder="Enter Your Phone Number" />
+      </label>
+
+      <label for="email">
+        Email:<input type="email" placeholder="Enter Your Email" /> </label
+      ><br />
+
+      <br /><label for="dob"> Choose DOB:<input type="date" /> </label><br />
+
+      <br /><label for="gender"
+        >Gender:
+        <select>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="third gender">Third Gender</option>
+        </select>
+
+        <button type="submit">Submit</button>
+      </label>
+    </form>
+  </body>
+</html>
