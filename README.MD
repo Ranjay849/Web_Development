@@ -8,7 +8,7 @@ HTML:
 Fully comfortable with most HTML concepts.
 Practicing advanced topics like forms and embedding content.
 
-📫 How to Reach Me
+📫 How to Reach Me: 
 📧 Email: ranjayku745@gmail.com
 🌐 GitHub: Ranjay849
 
