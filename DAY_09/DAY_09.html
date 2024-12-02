@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model & Inline & Block Elements</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        color: #4caf50;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .box {
+        width: 100px;
+        padding: 10px;
+        border: 5px solid #000;
+        margin: 20px;
+        background-color: #ffeb3b;
+      }
+
+      .box-border-box {
+        width: 100px;
+        padding: 10px;
+        border: 5px solid #000;
+        margin: 20px;
+        background-color: #4caf50;
+        box-sizing: border-box;
+      }
+
+      .inline-container {
+        padding: 10px;
+      }
+
+      .inline-item {
+        display: inline;
+        background-color: #ff5722;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .block-container {
+        padding: 10px;
+      }
+
+      .block-item {
+        display: block;
+        width: 100%;
+        background-color: #ff5722;
+        color: white;
+        padding: 10px;
+        margin: 10px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Box Model and Inline & Block Elements</h1>
+
+    <section>
+      <h2>1. Default Box Model</h2>
+      <div class="box">
+        Default box model: The box's total width becomes content + padding +
+        border. So, it will take more space than the width defined.
+      </div>
+      <p>
+        <strong>Explanation:</strong> Width = 100px (content) + 10px (padding) +
+        5px (border) + 20px (margin) = 170px (total width)
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Box-sizing: border-box</h2>
+      <div class="box-border-box">
+        Box-sizing: border-box ensures the padding and border are included
+        within the 100px width, so the total width is exactly 100px.
+      </div>
+      <p>
+        <strong>Explanation:</strong> Width remains 100px, including padding and
+        border.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Inline Elements</h2>
+      <div class="inline-container">
+        <div class="inline-item">Item 1</div>
+        <div class="inline-item">Item 2</div>
+      </div>
+      <p>
+        <strong>Explanation:</strong> Inline elements sit side by side, taking
+        up only as much width as necessary.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Block Elements</h2>
+      <div class="block-container">
+        <div class="block-item">Block Element 1</div>
+        <div class="block-item">Block Element 2</div>
+      </div>
+      <p>
+        <strong>Explanation:</strong> Block elements take up the full width of
+        the container and stack vertically.
+      </p>
+    </section>
+  </body>
+</html>
