@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Navbar</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(120deg, #ffd3b6, #cff5e7);
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      .container {
+        background: linear-gradient(120deg, #17a2b8, #00509e);
+        min-width: 100%;
+        padding: 10px;
+      }
+
+      .navbar ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 40px;
+        margin: 0;
+        padding: 10px 30px;
+        list-style: none;
+      }
+
+      .navbar li {
+        display: inline-block;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .navbar a:hover {
+        background-color: #32cd32;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .navbar button {
+        border: none;
+        background-color: blue;
+        color: white;
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 10px 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .navbar button:hover {
+        background-color: #17a2b8;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      @media screen and (max-width: 480px) {
+        .navbar ul {
+          flex-direction: column;
+          gap: 20px;
+          padding: 10px;
+        }
+
+        .navbar li {
+          text-align: center;
+        }
+
+        .navbar a {
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 10px;
+        }
+
+        .navbar button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><button type="submit">Login</button></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
