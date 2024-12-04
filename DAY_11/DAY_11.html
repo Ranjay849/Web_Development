@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Vertical Navbar</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(15, 13, 13);
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .navbar {
+        margin-top: -10px;
+        margin-left: 100px;
+        padding: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        margin-bottom: -15px;
+      }
+
+      i,
+      a {
+        padding: 12px;
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+      }
+
+      .btn {
+        margin-top: 12px;
+        border: none;
+        padding: 15px;
+        background-color: #1da1f2;
+        border-radius: 500px;
+        width: 120%;
+        cursor: pointer;
+        font-size: 20px;
+        color: white;
+      }
+
+      .btn:hover {
+        background-color: #1991c6;
+      }
+
+      .line {
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 100vh;
+        width: 1px;
+        margin-left: 50px;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          margin-left: 20px;
+          padding: 10px;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        li {
+          margin-bottom: 8px;
+        }
+
+        i,
+        a {
+          font-size: 18px;
+          padding: 8px;
+        }
+
+        .btn {
+          font-size: 18px;
+          padding: 10px;
+          width: 100%;
+        }
+
+        .line {
+          height: 100vh;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .navbar {
+          margin-left: 10px;
+          padding: 5px;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        li {
+          margin-bottom: 5px;
+        }
+
+        i,
+        a {
+          font-size: 16px;
+          padding: 6px;
+        }
+
+        .btn {
+          font-size: 16px;
+          padding: 8px;
+          width: 100%;
+        }
+
+        .line {
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="https://x.com/Ranjay849" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+          </li>
+          <li>
+            <a href="#explore"
+              ><i class="fa-solid fa-magnifying-glass"></i>Explore</a
+            >
+          </li>
+          <li>
+            <a href="#notifications"
+              ><i class="fa-regular fa-bell"></i>Notifications</a
+            >
+          </li>
+          <li>
+            <a href="#messages"
+              ><i class="fa-regular fa-envelope"></i>Messages</a
+            >
+          </li>
+          <li>
+            <a href="#grok"><i class="fa-regular fa-square-check"></i>Grok</a>
+          </li>
+          <li>
+            <a href="#communities"
+              ><i class="fa-solid fa-user-group"></i>Communities</a
+            >
+          </li>
+          <li>
+            <a href="#premium"><i class="fa-brands fa-x-twitter"></i>Premium</a>
+          </li>
+          <li>
+            <a href="#verified-orgs"
+              ><i class="fa-solid fa-bolt-lightning"></i>Verified Orgs</a
+            >
+          </li>
+          <li>
+            <a href="#profile"><i class="fa-regular fa-user"></i>Profile</a>
+          </li>
+          <li>
+            <a href="#more"><i class="fa-regular fa-comment-dots"></i>More</a>
+          </li>
+        </ul>
+        <button class="btn" type="submit">Post</button>
+      </div>
+
+      <div class="line"></div>
+    </div>
+  </body>
+</html>
