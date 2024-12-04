@@ -1,6 +1,6 @@
 👋 Hi there! I'm **Ranjay**, a passionate **BCA student** and aspiring **Full Stack Web Developer**.
 
-I'm on a journey to **learn, build, and grow** in the world of web development. 🚀  
+- I'm on a journey to **learn, build, and grow** in the world of web development. 🚀  
 
 ---
 
@@ -8,7 +8,7 @@ I'm on a journey to **learn, build, and grow** in the world of web development. 
 - 🛠️ Learning **front-end** and **back-end** development step by step.  
 - ✨ Exploring technologies like **HTML**, **CSS**, and **JavaScript**.
 - 🏗️ Working on small projects to **apply and showcase** my skills.  
-- 📖 Sharing my progress daily on [LinkedIn](www.linkedin.com/in/ranjay-kumar-3ab566276).
+- 📖 Sharing my progress daily on [LinkedIn](https://www.linkedin.com/in/ranjay-kumar-3ab566276/).
 
 ---
 
@@ -26,11 +26,11 @@ I'm on a journey to **learn, build, and grow** in the world of web development. 
 ---
 
 ## 🌐 **Let's Connect:**  
-- 🔗 **LinkedIn:** [Ranjay's Profile](www.linkedin.com/in/ranjay-kumar-3ab566276)  
+- 🔗 **LinkedIn:** [Ranjay's Profile](https://www.linkedin.com/in/ranjay-kumar-3ab566276/)  
 - 💻 **Twitter:** [Ranjay's Profile](https://x.com/Ranjay849)  
 
 ---
 
 ✨ **My Motto:** *"Learn consistently, build passionately, and grow endlessly!"*  
 
-Feel free to check out my repositories and join me on this exciting journey to become a **Full Stack Web Developer**! 🌈
+Feel free to check out my repositories and join me on this exciting journey. 🌈
