@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Card Design</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        font-family: "Arial", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 50px;
+      }
+
+      .item {
+        background-color: #fff;
+        width: 280px;
+        height: 430px;
+        border-radius: 15px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        border: 1px solid #ddd;
+      }
+
+      .item:hover {
+        transform: scale(1.07);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .photo {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-bottom: 2px solid #f0f0f0;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        color: #333;
+        margin: 15px 0 10px 0;
+        letter-spacing: 0.5px;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #666;
+        margin: 0 15px 15px 15px;
+        line-height: 1.5;
+      }
+
+      h3 {
+        font-size: 1.6rem;
+        color: #0e2c4c;
+        margin-bottom: 15px;
+        font-weight: bold;
+      }
+
+      .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+      }
+
+      @media screen and (max-width: 1024px) {
+        .container {
+          gap: 20px;
+          padding: 40px;
+        }
+
+        .item {
+          width: 250px;
+          height: 410px;
+        }
+
+        h2 {
+          font-size: 1.1rem;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          padding: 30px;
+        }
+
+        .item {
+          width: 90%;
+          max-width: 300px;
+        }
+
+        h2 {
+          font-size: 1rem;
+        }
+
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .container {
+          padding: 20px;
+        }
+
+        .item {
+          width: 100%;
+          max-width: 280px;
+        }
+
+        h2 {
+          font-size: 0.9rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 0.8rem;
+        }
+
+        .btn {
+          padding: 8px 15px;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <img
+          class="photo"
+          src="https://www.india.com/wp-content/uploads/2024/07/1-110.jpg"
+          alt="Coming Soon"
+        />
+        <h2>Coming Soon</h2>
+        <p>We are working tirelessly to create something truly amazing!</p>
+        <h3>&#8377;500</h3>
+        <button class="btn" type="submit">Add to cart</button>
+      </div>
+
+      <div class="item">
+        <img
+          class="photo"
+          src="https://www.victorsport.com/files/en_us/product/list_108225_20231128171859.jpg"
+          alt="Coming Soon"
+        />
+        <h2>Coming Soon</h2>
+        <p>We are working tirelessly to create something truly amazing!</p>
+        <h3>&#8377;450</h3>
+        <button class="btn" type="submit">Add to cart</button>
+      </div>
+
+      <div class="item">
+        <img
+          class="photo"
+          src="https://ca.victorsport.com/files/ca/product/list_97095_20221003101504.png"
+          alt="Coming Soon"
+        />
+        <h2>Coming Soon</h2>
+        <p>We are working tirelessly to create something truly amazing!</p>
+        <h3>&#8377;600</h3>
+        <button class="btn" type="submit">Add to cart</button>
+      </div>
+
+      <div class="item">
+        <img
+          class="photo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRJ-SauV9ip73WJrkHBQU0AM3iZ2D_V3HMf8-juX27O6cUuKBdThmgUo3GSVEIOtnwqcQ&usqp=CAU"
+          alt="Coming Soon"
+        />
+        <h2>Coming Soon</h2>
+        <p>We are working tirelessly to create something truly amazing!</p>
+        <h3>&#8377;300</h3>
+        <button class="btn" type="submit">Add to cart</button>
+      </div>
+    </div>
+  </body>
+</html>
