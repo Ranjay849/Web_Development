@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Simple Webpage with Carousel</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #ddd;
+        color: #1a1a1a;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+
+      .carousel {
+        width: 60%;
+        height: 60vh;
+        overflow: hidden;
+        border: 2px solid white;
+      }
+
+      .carousel-track {
+        display: flex;
+        animation: scroll 13s infinite linear;
+      }
+
+      .carousel-item {
+        min-width: 100%;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-100%);
+        }
+        35% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-200%);
+        }
+        60% {
+          transform: translateX(-200%);
+        }
+        75% {
+          transform: translateX(-300%);
+        }
+        85% {
+          transform: translateX(-300%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        gap: 150px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding-bottom: 20px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .card button {
+        margin-top: 30px;
+        border: none;
+      }
+
+      .card button a {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+
+      .card button a:hover {
+        background-color: #0056b3;
+      }
+
+      .foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a1a1a;
+        font-size: 20px;
+        color: #fff;
+        padding: 15px;
+        margin-top: 50px;
+      }
+
+      @media (max-width: 768px) {
+        .carousel {
+          width: 90%;
+          height: 50vh;
+          overflow: hidden;
+        }
+
+        .carousel-track {
+          flex-direction: column;
+        }
+
+        .carousel-item {
+          min-width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .carousel-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .card-container {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .card {
+          width: 80%;
+          margin: 0 auto;
+        }
+
+        .foot {
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .carousel {
+          width: 100%;
+          height: 40vh;
+          overflow: hidden;
+        }
+
+        .carousel-track {
+          flex-direction: column;
+        }
+
+        .carousel-item {
+          min-width: 100%;
+          margin-bottom: 10px;
+        }
+
+        .carousel-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .card-container {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .card {
+          width: 90%;
+          margin: 0 auto;
+        }
+
+        .card img {
+          height: 120px;
+        }
+
+        .card button a {
+          padding: 8px 16px;
+          font-size: 12px;
+        }
+
+        .foot {
+          font-size: 14px;
+          padding: 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/1144277/pexels-photo-1144277.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              alt="Image 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/1114637/pexels-photo-1114637.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              alt="Image 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/2519823/pexels-photo-2519823.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              alt="Image 3"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://images.pexels.com/photos/29421578/pexels-photo-29421578.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+              alt="Image 4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img
+          src="https://i.ytimg.com/an_webp/yG8JMlldoCE/mqdefault_6s.webp?du=3000&sqp=CNXO_roG&rs=AOn4CLB55S2x_F4ni2krxFpELIRiD1M4fg"
+          alt="Youtube Thumbnail may be changed"
+        />
+        <button type="submit">
+          <a
+            href="https://youtu.be/yG8JMlldoCE?si=zB5Sa7W4C6WbNTFX"
+            target="_blank"
+            >Watch Now</a
+          >
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.ytimg.com/an_webp/GcileX82Zos/mqdefault_6s.webp?du=3000&sqp=CO_L_roG&rs=AOn4CLDDQAZHi99HIYm4U1TeYZVXqc7Nxg"
+          alt="Youtube Thumbnail may be changed"
+        />
+        <button type="submit">
+          <a
+            href="https://youtu.be/GcileX82Zos?si=DTtbcTznrINT5xy8"
+            target="_blank"
+            >Watch Now</a
+          >
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.ytimg.com/an_webp/l0kxjSo67oc/mqdefault_6s.webp?du=3000&sqp=CNnM_roG&rs=AOn4CLC3PFFFPD00S2QrRyqwwuW-4x0Lfw"
+          alt="Youtube Thumbnail may be changed"
+        />
+        <button type="submit">
+          <a
+            href="https://youtu.be/l0kxjSo67oc?si=itXgHFEVwVuz3gMn"
+            target="_blank"
+            >Watch Now</a
+          >
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.ytimg.com/an_webp/b_mg7OA2H70/mqdefault_6s.webp?du=3000&sqp=CMHZ_roG&rs=AOn4CLAbGyfkPtx3ou2CzwBQPtaaGA4wdQ"
+          alt="Youtube Thumbnail may be changed"
+        />
+        <button type="submit">
+          <a
+            href="https://youtu.be/b_mg7OA2H70?si=xkF6PS6EMtAMG_4n"
+            target="_blank"
+            >Watch Now</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <p class="foot">✨ Thanks for Visiting My Webpage! ✨</p>
+    </footer>
+  </body>
+</html>
